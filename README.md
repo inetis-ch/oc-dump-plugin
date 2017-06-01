@@ -18,4 +18,4 @@ OctoberCMS plugin that add Twig function d() for recursively dump passed variabl
 ![dump mulitvars](https://cloud.githubusercontent.com/assets/12028540/26622650/6bef880c-45eb-11e7-844e-cc38f1b887da.png)
 
 ## Author
-inetis is a webdesign agency in Vufflens-la-Ville, Switzerland. We love coding and creating powerful apps and sites  [on our website](https://inetis.ch).
+inetis is a webdesign agency in Vufflens-la-Ville, Switzerland. We love coding and creating powerful apps and sites  [see our website](https://inetis.ch).
