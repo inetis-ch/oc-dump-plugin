@@ -19,7 +19,8 @@ class Plugin extends PluginBase
             'name'        => 'Twig Dump',
             'description' => 'Add Twig function d() that recursively dump passed variables',
             'author'      => 'inetis',
-            'icon'        => 'icon-code'
+            'icon'        => 'icon-code',
+            'homepage'    => 'https://github.com/inetis-ch/oc-dump'
         ];
     }
 
@@ -40,5 +41,4 @@ class Plugin extends PluginBase
             ]
         ];
     }
-
 }
