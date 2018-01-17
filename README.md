@@ -1,20 +1,19 @@
-# Twig Dump
-This OctoberCMS plugin adds Twig function `d()` that recursively dump passed variables
+# About
 
-Improve the way do display a dump of a variable by adding Twig function `{{ d(myVar) }}` that outputs details about a value like Laravel's `dd()` PHP function (see below).   
+OctoberCMS plugin to improve debugging in Twig. 
 
-Unlike the native `dump` Twig function this function displays all children of the passed variable.
+Adds the `d()` function to Twig to recursively dump provided variables in the same manner as Laravel's `dd()` function. Unlike Twig's native `dump()` function, `d()` displays all nested members of the provided variables.
 
 ## Usage
 
-### Dump a collection
+### Dumping a single variable
 ```twig
-{{ d(myVar) }}
+{{ d(myCollection) }}
 ```
 ![Twig d() Collection demo](https://cloud.githubusercontent.com/assets/12028540/26622474/d464855a-45ea-11e7-956f-edc02f44437c.png)
 
 
-### Dump multiple variables
+### Dumping multiple variables
 
 ```twig
 {{ d(var1, var2) }}
