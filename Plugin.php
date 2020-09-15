@@ -34,9 +34,7 @@ class Plugin extends PluginBase
         return [
             'functions' => [
                 'd' => function () {
-                    array_map(function ($x) {
-                        (new Dumper)->dump($x);
-                    }, func_get_args());
+                    \dump(func_get_args());
                 }
             ]
         ];
