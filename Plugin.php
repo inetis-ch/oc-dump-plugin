@@ -1,6 +1,8 @@
 <?php namespace Inetis\Dump;
 
 use Illuminate\Support\Debug\Dumper;
+use Symfony\Component\VarDumper\VarDumper as VarDumper;
+use Illuminate\Foundation\Application as Laravel;
 use System\Classes\PluginBase;
 
 /**
@@ -35,7 +37,11 @@ class Plugin extends PluginBase
             'functions' => [
                 'd' => function () {
                     array_map(function ($x) {
-                        (new Dumper)->dump($x);
+                        if (explode(".",Laravel::VERSION)[0] < 6) {
+                            (new Dumper)->dump($x);
+                        }else{
+                            (new VarDumper)->dump($x);
+                        }
                     }, func_get_args());
                 }
             ]
