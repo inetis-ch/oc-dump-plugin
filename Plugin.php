@@ -1,6 +1,5 @@
 <?php namespace Inetis\Dump;
 
-use Illuminate\Support\Debug\Dumper;
 use System\Classes\PluginBase;
 
 /**
@@ -35,7 +34,7 @@ class Plugin extends PluginBase
             'functions' => [
                 'd' => function () {
                     array_map(function ($x) {
-                        (new Dumper)->dump($x);
+                        dump($x);
                     }, func_get_args());
                 }
             ]
