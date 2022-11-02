@@ -4,6 +4,12 @@ OctoberCMS plugin to improve debugging in Twig.
 
 Adds the `d()` function to Twig to recursively dump provided variables in the same manner as Laravel's `dd()` function. Unlike Twig's native `dump()` function, `d()` displays all nested members of the provided variables.
 
+## Installation
+To install this plugin, use the following command:
+```
+composer require inetis/dump-plugin
+```
+
 ## Usage
 
 ### Dumping a single variable
